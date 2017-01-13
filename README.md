@@ -1,0 +1,1 @@
+# wyra_plugin_base
