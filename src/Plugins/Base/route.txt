@@ -1,0 +1,11 @@
+[Install]
+install=plugin:Base|subplugin:Install|api:smarty
+install/install=plugin:Base|subplugin:Install|action:insert|api:json
+
+[Home]
+home=plugin:Base|subplugin:Home|api:smarty
+
+[Login/Logout]
+login=plugin:Base|subplugin:Login|api:smarty
+login/login=plugin:Base|subplugin:Login|action:login|api:json
+logout=plugin:Base|subplugin:Login|action:logout|api:smarty
