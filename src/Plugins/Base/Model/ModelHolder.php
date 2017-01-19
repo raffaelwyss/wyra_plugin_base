@@ -1,6 +1,6 @@
 <?php
 
-namespace Wyra\Plugin\Base\Model;
+namespace Wyra\Plugins\Base\Model;
 
 class ModelHolder extends \Wyra\Kernel\MVC\ModelHolder
 {

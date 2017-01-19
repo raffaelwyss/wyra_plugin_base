@@ -4,6 +4,8 @@ BENOETIGTEZEIT=Benötigte %s Sekunden
 [Error / Exception]
 EXCEPTION=Fehler
 ERROR=Fehler
+FEHLERHAFTEEINGABEN=Fehlerhafte eingaben gefunden
+VERARBEITUNGSFEHLER=Verarbeitungsfehler
 
 [Installation]
 INSTALLATION=Installation

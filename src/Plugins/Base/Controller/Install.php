@@ -6,7 +6,7 @@ namespace Wyra\Plugins\Base\Controller;
 use Wyra\Kernel\DB\DB;
 use Wyra\Kernel\Kernel;
 use Wyra\Kernel\MVC\Controller;
-use Wyra\Plugin\Base\Model\ModelHolder;
+use Wyra\Plugins\Base\Model\ModelHolder;
 
 class Install extends Controller
 {

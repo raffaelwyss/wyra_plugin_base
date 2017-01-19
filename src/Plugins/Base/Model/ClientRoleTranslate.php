@@ -1,6 +1,6 @@
 <?php
 
-namespace Wyra\Plugin\Base\Model;
+namespace Wyra\Plugins\Base\Model;
 
 use Wyra\Kernel\MVC\Model;
 
