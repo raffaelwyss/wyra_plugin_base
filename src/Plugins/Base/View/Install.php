@@ -64,7 +64,7 @@ class Install extends View
             'name' => 'host',
             'type' => 'text',
             'element' => 'input',
-            'label' => 'DATENBANKHOST',
+            'label' => 'Base.DATENBANKHOST',
             'required' => true,
             'value' => 'localhost'
         );
@@ -74,7 +74,7 @@ class Install extends View
             'name' => 'database',
             'type' => 'text',
             'element' => 'input',
-            'label' => 'DATENBANKNAME',
+            'label' => 'Base.DATENBANKNAME',
             'required' => true,
             'value'  => 'Wyra'
         );
@@ -84,7 +84,7 @@ class Install extends View
             'name' => 'dbuser',
             'type' => 'text',
             'element' => 'input',
-            'label' => 'DATENBANKUSER',
+            'label' => 'Base.DATENBANKUSER',
             'required' => true,
             'value'  => 'wyra'
         );
@@ -94,7 +94,7 @@ class Install extends View
             'name' => 'dbpassword',
             'type' => 'password',
             'element' => 'input',
-            'label' => 'DATENBANKPASSWORT',
+            'label' => 'Base.DATENBANKPASSWORT',
             'required' => true,
             'value'  => 'wyra'
         );
@@ -104,7 +104,7 @@ class Install extends View
             'name' => 'tableprefix',
             'type' => 'text',
             'element' => 'input',
-            'label' => 'TABELLENPREFIX',
+            'label' => 'Base.TABELLENPREFIX',
             'required' => true,
             'value'  => 'wyra_'
         );
@@ -122,7 +122,7 @@ class Install extends View
             'name' => 'pagename',
             'type' => 'text',
             'element' => 'input',
-            'label' => 'SEITENNAME',
+            'label' => 'Base.SEITENNAME',
             'required' => true,
             'value' => 'WyRa App'
         );
@@ -132,7 +132,7 @@ class Install extends View
             'name' => 'adminmail',
             'type' => 'text',
             'element' => 'input',
-            'label' => 'ADMINMAIL',
+            'label' => 'Base.ADMINMAIL',
             'required' => true,
             'value' => 'wyra@wyssinet.ch'
         );
@@ -142,7 +142,7 @@ class Install extends View
             'name' => 'adminname',
             'type' => 'text',
             'element' => 'input',
-            'label' => 'ADMINNAME',
+            'label' => 'Base.ADMINNAME',
             'required' => true,
             'value' => 'Administrator'
         );
@@ -152,7 +152,7 @@ class Install extends View
             'name' => 'adminpassword',
             'type' => 'password',
             'element' => 'input',
-            'label' => 'ADMINPASSWORT',
+            'label' => 'Base.ADMINPASSWORT',
             'required' => true,
             'value' => 'Password'
         );

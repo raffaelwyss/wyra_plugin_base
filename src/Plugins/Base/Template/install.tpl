@@ -14,48 +14,57 @@
           novalidate>
 
         <div class="col-md-12">
-            <div class="col-md-12">
-                <div class="card">
-                    <div class="header">{_ I='2x_download'} {_ L='INSTALLATION'}</div>
+            <div class="card">
+                <div class="card-header">
+                    {_ I='3x_download'} <span class="text-3x">{_ L='Base.INSTALLATION'}</span>
+                </div>
+                <div class="card-block">
+                    <p class="card-text">
+
+                        <div class="col-md-6">
+
+                            <div class="card">
+                                <div class="card-header">
+                                    {_ I='database'} <span class="">{_ L='Base.DATENBANK'}</span>
+                                </div>
+                                <div class="card-block">
+                                    <p class="card-text">
+
+                                        {formelements group="datenbank"}
+
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-6">
+
+                            <div class="card">
+                                <div class="card-header">{_ I='gear'}  {_ L='Base.EINSTELLUNGEN'}</div>
+                                <div class="card-block">
+                                    <p class="card-text">
+
+                                        {formelements group="einstellung"}
+
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="text-center">
+                                <button ng-disabled="form.busy" type="submit" class="btn btn-primary btn-fill btn-lg">{_ L='Base.INSTALLIEREN'}</button>
+                            </div>
+                        </div>
+
+
+                    </p>
                 </div>
             </div>
         </div>
 
-
-        <div class="col-md-12" ng-cloak>
-
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="header">{_ I='database'} {_ L='DATENBANK'}</div>
-                    <div class="content">
-
-                        {formelements group="datenbank"}
-
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="header">{_ I='gear'}  {_ L='EINSTELLUNGEN'}</div>
-                    <div class="content">
-
-                        {formelements group="einstellung"}
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-12">
-                <div class="card">
-                    <div class="content text-center">
-                        <button ng-disabled="form.busy || !form.$valid" type="submit" class="btn btn-primary btn-fill btn-lg">{_ L='INSTALLIEREN'}</button>
-                    </div>
-                </div>
-            </div>
-
-        </div>
 
     </form>
 

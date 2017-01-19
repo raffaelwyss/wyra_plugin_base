@@ -1,0 +1,25 @@
+[Allgemein]
+BENOETIGTEZEIT=Benötigte %s Sekunden
+
+[Error / Exception]
+EXCEPTION=Fehler
+ERROR=Fehler
+
+[Installation]
+INSTALLATION=Installation
+EINSTELLUNGEN=Einstellungen
+INSTALLIEREN=Installieren
+
+[Installation/Datenbank]
+DATENBANK=Datenbank
+DATENBANKHOST=Host
+DATENBANKNAME=Datenbankname
+DATENBANKUSER=User
+DATENBANKPASSWORT=Passwort
+TABELLENPREFIX=Tabellen Prefix
+
+[Installation/Einstellungen]
+SEITENNAME=Seitenname
+ADMINNAME=Administrator
+ADMINPASSWORT=Passwort
+ADMINMAIL=Mail
