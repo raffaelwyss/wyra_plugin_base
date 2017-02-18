@@ -3,11 +3,10 @@
 
 namespace Wyra\Plugins\Base\Controller;
 
-use Wyra\Kernel\Exception\FatalException;
 use Wyra\Kernel\Exception\UserException;
 use Wyra\Kernel\Kernel;
 use Wyra\Kernel\MVC\Controller;
-use Wyra\Plugin\Base\Model\User;
+use Wyra\Plugins\Base\Model\User;
 
 class Login extends Controller
 {
@@ -55,17 +54,22 @@ class Login extends Controller
         $data['username'] = Kernel::$post->get('mail');
         $_user = new User();
         $login = $_user->getOneWhere("cusername = :username", $data);
-        $password = Kernel::$crypt->decrypt($login['cpassword']);
+        $password = null;
+        if ($login) {
+            $password = Kernel::$crypt->decrypt($login['cpassword']);
+        }
+
 
         // Kontrolle ob die beiden Passwörter effektiv übereinstimmen
-        if ($password === $post['password']) {
+        if ($password !== null and $password === $post['password']) {
             $this->loadUserData();
             $data = [];
             $data['notify'] = Kernel::$language->get('Base.LOGINERFOLGREICH');
             $data['goto'] = '/';
             $this->setData($data);
         } else {
-            throw new UserException('Base.LOGINFEHLGESCHLAGEN');
+            $message = Kernel::$language->get('Base.LOGINFEHLGESCHLAGEN');
+            $this->setData(Kernel::$notify->getDanger($message));
         }
     }
 

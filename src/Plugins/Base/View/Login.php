@@ -55,7 +55,7 @@ class Login extends View
             'name' => 'mail',
             'type' => 'text',
             'element' => 'input',
-            'label' => 'MAILORID',
+            'label' => 'Base.MAILORID',
             'required' => true,
             'placeholder' => 'mail@yourdomain.ch'
         );
@@ -65,7 +65,7 @@ class Login extends View
             'name' => 'password',
             'type' => 'password',
             'element' => 'input',
-            'label' => 'PASSWORT',
+            'label' => 'Base.PASSWORT',
             'required' => true
         );
 

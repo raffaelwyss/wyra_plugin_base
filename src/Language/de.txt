@@ -11,6 +11,7 @@ VERARBEITUNGSFEHLER=Verarbeitungsfehler
 INSTALLATION=Installation
 EINSTELLUNGEN=Einstellungen
 INSTALLIEREN=Installieren
+DATENBENKVERBINDUNGFEHLGESCHLAGEN=Datenbankverbindung ist fehlgeschlagen
 
 [Installation/Datenbank]
 DATENBANK=Datenbank
@@ -25,3 +26,10 @@ SEITENNAME=Seitenname
 ADMINNAME=Administrator
 ADMINPASSWORT=Passwort
 ADMINMAIL=Mail
+
+[Login]
+LOGIN=Login
+MAILORID=Mail/ID
+PASSWORT=Passwort
+LOGINFEHLGESCHLAGEN=Falsche Logindaten
+LOGINERFOLGREICH=Login erfolgreich
